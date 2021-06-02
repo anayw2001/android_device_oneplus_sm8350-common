@@ -305,6 +305,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.oneplus \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # GPS
 PRODUCT_COPY_FILES += \
