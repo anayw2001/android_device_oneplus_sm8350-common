@@ -1,7 +1,6 @@
 slimbus.ko
 slimbus-ngd.ko
 rdbg.ko
-wlan.ko
 btpower.ko
 bt_fm_slim.ko
 llcc_perfmon.ko
