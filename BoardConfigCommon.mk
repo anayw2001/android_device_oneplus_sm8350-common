@@ -54,7 +54,6 @@ include $(COMMON_PATH)/prebuilt_kernel.mk
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
 BOARD_VENDOR_KERNEL_MODULES := $(addprefix $(KERNEL_MODULES_DIR), $(BOARD_VENDOR_KERNEL_MODULES_LOAD))
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
