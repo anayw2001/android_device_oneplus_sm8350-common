@@ -293,7 +293,8 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    OnePlusDoze
+    OnePlusDoze \
+    OnePlusDozeOverlay
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -395,14 +396,12 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc_snxxx@1.2-service \
-    android.hardware.secure_element@1.0:64 \
+    android.hardware.secure_element_snxxx@1.2-service \
     com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    ls_nq_client \
-    jcos_nq_client \
+    libchrome.vendor \
+    NfcNci \
     SecureElement \
-    se_nq_extn_client \
-    Tag \
+    Tag
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
@@ -458,6 +457,12 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2
+
+# Secure element (QTI)
+PRODUCT_PACKAGES += \
+    jcos_nq_client \
+    ls_nq_client \
+    se_nq_extn_client
 
 # Sensors
 PRODUCT_PACKAGES += \
